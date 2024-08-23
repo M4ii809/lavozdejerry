@@ -1,0 +1,242 @@
+html {
+    font-size: 62.5px;
+    --color-principal: #ffebce;
+    --color-secundario: #fff9f0;
+    --color-terciario: 	#1a1c1a;
+    --color-cuatro: #ffd591;
+    --fuente-principal: "Comfortaa", sans-serif;
+    --fuente-secundaria: "Oswald", sans-serif;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    font-size: 0.4rem;
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    color: var(--color-terciario)
+}
+
+.mainav {
+    display: flex;
+    background-color: var(--color-principal) ;
+    justify-content: space-around;
+}
+
+.buttonimg:hover {
+    cursor: pointer;
+}
+
+.seconav {
+    display: flex;
+    background-color: var(--color-secundario);
+    align-self: flex-start;
+    height: 1rem;
+}
+
+.ul1 {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-secundario);
+    justify-content: space-evenly;
+}
+
+li {
+    font-size: 0.3rem;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-secundario);
+    padding: 0.2rem 0.1rem;
+    margin: 0%
+}
+
+a {
+    text-decoration: none;
+    color: #1a1c1a;
+}
+
+li:hover {
+    animation: ease-in 0.2s color2 forwards;
+}
+
+@keyframes color2 {
+    from {
+        background-color: var(--color-secundario);
+    }
+      
+    to {
+        background-color: var(--color-principal);
+    }
+}
+
+.main-bg {
+    display: flex;
+    background-image: url("https://www.themandarin.com.au/wp-content/uploads/2020/03/newspaper.jpg?w=795");
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    width: 90%;
+    height: auto;
+    background-color: var(--color-principal);
+    border-radius: 1.2rem;
+    margin: 0.2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.datecontainer {
+    display: flex;
+    width: 95%;
+    height: 0.5rem;
+    background-color: var(--color-secundario);
+    border-radius: 0.4rem;
+    margin: 0.2rem;
+    margin-bottom: -0.1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.date {
+    font-family: var(--fuente-principal);
+    font-size: 0.3rem;
+    margin-left: 0.2rem;
+    text-decoration: underline;
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+.vntcontainer {
+    display: flex;
+    width: 95%;
+    height: 1.2rem;
+    background-color: var(--color-secundario);
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.vnt {
+    font-family: var(--fuente-principal);
+    font-size: 0.5rem;
+    margin-left: 0.2rem;
+    text-decoration: underline;
+    color: var(--color-terciario);
+}
+
+.titlecontainer {
+    display: flex;
+    width: 95%;
+    height: auto;
+    background-color: var(--color-secundario);
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    margin-top: 0rem;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: -0.1rem;
+}
+
+.title {
+    margin: 0.3rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-terciario);
+    font-size: 1rem;
+}
+
+.copcontainer {
+    display: flex;
+    width: 95%;
+    height: 1.2rem;
+    background-color: var(--color-secundario);
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: -0.1rem;
+}
+
+.cop {
+    font-family: var(--fuente-principal);
+    font-size: 0.4rem;
+    margin-left: 0.2rem;
+}
+
+.contentcontainer {
+    display: grid;
+    width: 95%;
+    height: auto;
+    background-color: var(--color-secundario);
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    margin-top: 0rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.content1 {
+    font-size: 0.3rem;
+    font-family: var(--fuente-principal);
+    margin: 0.3rem;
+    text-align: justify;
+    color: var(--color-terciario);
+}
+.ingabadiro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.img1 {
+    display: flex;
+    border-radius: 0.3rem;
+    justify-self: center;
+    margin: 0.2rem;
+    opacity: 0.7;
+}
+
+.img1:hover {
+    opacity: 1;
+}
+
+.content2 {
+    display: flex;
+    justify-self: center;
+    margin: 0.2rem;
+    margin-top: -0.15rem;
+    margin-bottom: -0.15rem;
+    color: var(--color-terciario);
+    opacity: 0.8;
+    font-size: 0.25rem;
+    font-style: italic;
+}
+
+.img2 {
+    display: flex;
+    border-radius: 0.8rem;
+    justify-self: center;
+    margin: 0.2rem;
+    filter: blur(0.5rem);
+}
+
+.img2:hover {
+    filter: none;
+}
