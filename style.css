@@ -1,12 +1,14 @@
+/* Base Styles */
 html {
     font-size: 62.5px;
     --color-principal: #ffebce;
     --color-secundario: #fff9f0;
-    --color-terciario: 	#1a1c1a;
+    --color-terciario: #1a1c1a;
     --color-cuatro: #ffd591;
     --fuente-principal: "Comfortaa", sans-serif;
     --fuente-secundaria: "Oswald", sans-serif;
 }
+
 body {
     margin: 0%;
     padding: 0%;
@@ -16,12 +18,12 @@ h1 {
     font-size: 0.4rem;
     font-family: var(--fuente-principal);
     font-weight: bold;
-    color: var(--color-terciario)
+    color: var(--color-terciario);
 }
 
 .mainav {
     display: flex;
-    background-color: var(--color-principal) ;
+    background-color: var(--color-principal);
     justify-content: space-around;
 }
 
@@ -50,7 +52,7 @@ li {
     font-family: var(--fuente-principal);
     background-color: var(--color-secundario);
     padding: 0.2rem 0.1rem;
-    margin: 0%
+    margin: 0%;
 }
 
 a {
@@ -66,7 +68,6 @@ li:hover {
     from {
         background-color: var(--color-secundario);
     }
-      
     to {
         background-color: var(--color-principal);
     }
@@ -120,7 +121,7 @@ li:hover {
 .vntcontainer {
     display: flex;
     width: 95%;
-    height: 1.2rem;
+    height: auto;
     background-color: var(--color-secundario);
     border-radius: 0.4rem;
     margin: 0.3rem;
@@ -159,7 +160,7 @@ li:hover {
 .copcontainer {
     display: flex;
     width: 95%;
-    height: 1.2rem;
+    height: auto;
     background-color: var(--color-secundario);
     border-radius: 0.4rem;
     margin: 0.3rem;
@@ -193,6 +194,7 @@ li:hover {
     text-align: justify;
     color: var(--color-terciario);
 }
+
 .ingabadiro {
     display: flex;
     flex-direction: column;
@@ -240,3 +242,114 @@ li:hover {
 .img2:hover {
     filter: none;
 }
+
+/* Media Queries */
+@media (max-width: 600px) {
+    html {
+        font-size: 50px; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 0.35rem;
+    }
+
+    .mainav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul1 {
+        flex-direction: column;
+    }
+
+    li {
+        font-size: 0.35rem;
+    }
+
+    .datecontainer, .vntcontainer, .titlecontainer, .copcontainer {
+        width: 100%;
+    }
+
+    .date, .vnt, .title, .cop {
+        font-size: 0.4rem;
+    }
+
+    .content1 {
+        font-size: 0.25rem;
+    }
+
+    .cap {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+      font-size: 31.25px; /* Adjusting the base font size for better readability on small screens */
+    }
+  
+    .mainav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .seconav {
+      height: auto;
+    }
+  
+    .ul1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      font-size: 0.5rem;
+      padding: 0.3rem 0.2rem;
+      text-align: center;
+    }
+  
+    .main {
+      width: 95%;
+    }
+  
+    .datecontainer,
+    .vntcontainer,
+    .titlecontainer,
+    .copcontainer,
+    .contentcontainer {
+      width: 98%;
+    }
+  
+    .date {
+      font-size: 0.4rem;
+    }
+  
+    .vnt {
+      font-size: 0.6rem;
+    }
+  
+    .title {
+      font-size: 0.8rem;
+    }
+  
+    .cop {
+      font-size: 0.5rem;
+    }
+  
+    .content1 {
+      font-size: 0.4rem;
+    }
+  
+    .cap {
+      font-size: 0.6rem;
+    }
+  
+    .content2 {
+      font-size: 0.3rem;
+    }
+  
+    .img1, .img2 {
+      max-width: 95%;
+      height: auto;
+    }
+  }
